@@ -17,24 +17,24 @@ main {
     background-color: white;
     border-radius: 20px;
     width: 327px;
-    height: auto; /* Adaptation à la taille du contenu */
+    height: 501px;
     filter: drop-shadow(10px 10px black);
     border: 1px solid #111111;
     padding: 24px;
     font-family: "figtree";
     display: flex;
-    flex-direction: column; /* Mise en colonne */
-    gap: 16px; /* Espace entre éléments */
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 16px;
   }
   
 
-svg {
+img {
+    max-width: 100%;
   border-radius: 10px;
 }
 
 .textContainer {
-  width: 336px;
-  height: 194px;
   line-height: 150%;
   letter-spacing: 0px;
 }
@@ -45,41 +45,43 @@ svg {
   border-radius: 4px;
   width: fit-content;
   padding: 4px 12px 4px 12px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .publishedText {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .foundationsText {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
 .textContainer :last-child {
   color: #6b6b6b;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-.iconContainer {
-  height: 32px;
-  width: 129px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 48px;
-  font-size: 14px;
-  font-weight: bold;
+main :last-child {
+    display: flex;
+    align-items: center;
 }
 
-.iconContainer img{
-    width: 32px;
+main :last-child img {
+    max-width: 32px;
 }
 
-@media (min-width: 480px) {
-    main {
-      padding: 69px 24px;
+main :last-child p {
+    margin-left: 12px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px){
+    main{
+        width: 384px;
+        height: 612px;
     }
-  }
+}
+
   
