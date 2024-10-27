@@ -77,7 +77,7 @@ svg {
     width: 32px;
 }
 
-@media (min-width: 1224px) {
+@media (min-width: 480px) {
     main {
       padding: 69px 24px;
     }
